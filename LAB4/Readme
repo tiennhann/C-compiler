@@ -1,0 +1,6 @@
+Name: Nhan Le
+Date: September 16, 2022
+Project name: lab4
+Requirement: I created Readme file, the lex code(lab4.l), the yacc code(lab4.y), symbol table code(symtable.c and symtable.c), one test file, I removed lex.yy.c in yacc file according to compile correctly, and I take a screenshot of all case in the PDF file.
+
+Project describe: In this lab4, I need to insert integer and variable to yacc file, so I can insert variable with its value. To test it, I insert variable with its type and also the value of that variable. I also do some calculation to make sure a declared variable can be used (left and right hand side. 

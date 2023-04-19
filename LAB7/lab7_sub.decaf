@@ -1,0 +1,30 @@
+
+extern func print_int (int) void;
+extern func print_string (string) void;
+
+package foo {
+	var y int =7;
+	var Z[100] int;
+	var Y[100] bool;
+        var z  int = 10;
+
+	func f(b int) int 
+	{
+		var y int;
+		{  var  x[10] int;
+			x[2+3-5]=b + f(5+x[2]*b);
+		}
+		{  var x[10] int;
+			x[2+3-5]=b + f(5+x[2]*b);
+		}
+	}
+
+
+	func main(arg1 int, arg2 int) int
+	{
+		print_int(  f(arg1 + arg2 -z + y));
+		print_int(  f(arg1 + arg2 -z + y));
+		print_string("hello world\n");
+
+	}
+} // of package foo

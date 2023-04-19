@@ -1,0 +1,11 @@
+int a;
+int b;
+int result;
+int factor;
+a = 1
+b = 3
+factor = 5
+a = a +2 * -(factor*b)
+result = a -10
+result
+

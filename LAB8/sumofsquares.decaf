@@ -1,0 +1,33 @@
+// LAB8 demonstration
+// SHaun Cooper
+// Fall 2022
+//
+//  Program calculates the sum of squares between 1..100
+
+extern func print_int (int) void;
+extern func print_string (string) void;
+extern func read_int () int;
+
+package foo {
+         var sum int = 0;
+         var x int;
+         var i int;
+
+      func main () int 
+      {
+
+        
+         i =0;
+
+         while (i <= 100)
+         { sum = sum + i * i;
+           i = i + 1;
+         }
+         print_string("Sum of squares from 1 to 100 is  ");
+         print_int(sum);
+	 print_string("\n");
+
+      } // of main
+
+} // of foo
+

@@ -1,0 +1,41 @@
+//  This test should run without error
+
+extern  func print_int(int) void;
+extern  func print_string(string) void;
+
+package foo {
+
+      var x int;
+      var y int = 100;
+      var A[100] bool;
+
+    func foo(x int) void  { var x int; 
+              var x int;
+              var y bool;
+             while ( x <= y )
+              {
+
+               x = 1 + 2 - 3 * 4 / 6 % 7  && 8  || ! f(); // operators
+               return(3);
+               return(b); // where b was declared as "var b bool;"
+               return();
+               return;
+	       break;
+
+               if (a < b)
+                {  a = a << b >> c;}
+
+               if (a < b)
+                 { a = a << b >> c;
+                   c = true ; }//
+               else  
+                  { print_string("hello"); } 
+
+              } // of while
+       } // of foo
+
+    func main() int { foo(1); 
+       } // of main
+
+
+} // end of package foo 

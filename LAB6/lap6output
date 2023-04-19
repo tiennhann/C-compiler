@@ -1,0 +1,119 @@
+Parsing complted
+ EXTERN FUNC print_int
+  EXTERN Type  INT 
+END EXTERN with Type:  BOOL 
+
+ EXTERN FUNC print_string
+  EXTERN Type  STRING
+END EXTERN with Type:  BOOL 
+
+ Package : lab6
+     Variable  x[100]  with type  INT  
+  Variable  y with type  INT  
+  Variable  y with type  BOOL  = 1
+  METHOD FUNCTION  'main' with type  INT 
+     (NONE) 
+    BLOCK STATEMENT  
+     Variable  x with type  INT  
+     Variable  y with type  INT  
+     WHILE STATEMENT 
+      EXPR  <= 
+       EXPR  + 
+        Variable x 
+        EXPR  / 
+         CONSTANT INTEGER  5
+         CONSTANT INTEGER  2
+       EXPR  - 
+        EXPR  + 
+         CONSTANT INTEGER  2
+         Variable z 
+        CONSTANT INTEGER  5
+       BLOCK STATEMENT  
+        IF STATEMENT   
+         EXPR  >= 
+          EXPR  - 
+           Variable h 
+           CONSTANT INTEGER  2
+          EXPR  - 
+           CONSTANT INTEGER  3
+           CONSTANT INTEGER  2
+                   BLOCK STATEMENT  
+            METHOD CALL name: read
+             (
+METHOD ARG 
+             Variable x 
+               [
+               CONSTANT INTEGER  100
+               ]
+             )
+          ELSE   
+           BLOCK STATEMENT  
+             METHOD CALL name: write
+              (
+METHOD ARG 
+              EXPR  + 
+               Variable x 
+                 [
+                 CONSTANT INTEGER  100
+                 ]
+               CONSTANT INTEGER  200
+              )
+         METHOD CALL name: f
+          (
+METHOD ARG 
+          EXPR  + 
+           CONSTANT INTEGER  3
+           Variable x 
+             [
+             Variable x 
+               [
+               CONSTANT INTEGER  100
+               ]
+             ]
+          EXPR  + 
+           Variable bar 
+           CONSTANT INTEGER  200
+          CONSTANT INTEGER  20
+          )
+        RETURN STATEMENT   
+        RETURN STATEMENT   
+         EXPR  + 
+          EXPR  + 
+           Variable x 
+           CONSTANT INTEGER  5
+          CONSTANT INTEGER  7
+        IF STATEMENT   
+         EXPR  > 
+          EXPR  + 
+           Variable x 
+           CONSTANT INTEGER  10
+          EXPR  * 
+           CONSTANT INTEGER  10
+           CONSTANT INTEGER  20
+                   BLOCK STATEMENT  
+           ASSIGNMENT STATEMENT
+            Variable x 
+            EXPR  != 
+             Variable x 
+             CONSTANT INTEGER  10
+         METHOD CALL name: write
+          (
+METHOD ARG 
+          EXPR  !
+           EXPR  || 
+            EXPR  && 
+             CONSTANT INTEGER  3
+             CONSTANT INTEGER  5
+            EXPR  && 
+             CONSTANT BOOLEAN  true
+             EXPR  !
+              CONSTANT BOOLEAN  false
+          )
+  METHOD FUNCTION  'f' with type  VOID 
+    ( 
+    Method Variable x INT 
+    Method Variable y BOOL 
+    ) 
+    BLOCK STATEMENT  
+   
+Finished printing AST

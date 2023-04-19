@@ -1,0 +1,27 @@
+// LAB8 demonstration file
+//  Shaun Cooper
+// FALL 2022
+//  Program reads and writes a number to output
+//
+//  
+
+extern func print_int (int) void;
+extern func print_string (string) void;
+extern func read_int () int;
+
+package foo {
+
+         var x int;
+
+      func main () int 
+      {
+         print_string("enter a number ");
+         x = read_int();
+         print_string("you entered ");
+         print_int(x);
+	 print_string("\n");
+
+      } // of main
+
+} // of foo
+

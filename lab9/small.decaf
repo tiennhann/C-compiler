@@ -1,0 +1,15 @@
+extern func print_string (string) void;
+
+package foo {
+        var x int;
+        var A[100] int ;
+        var y int = 5;
+ func main () void
+      {
+        return(5);
+        print_string("hello world\n");
+      } // of main
+
+        
+}
+
